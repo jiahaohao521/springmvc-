@@ -13,6 +13,13 @@
 </head>
 <body>
 
+    <form action="upload2.do" method="post" enctype="multipart/form-data">
+        文件:<input type="file" name="photo"/><br />
+        文件:<input type="file" name="photo"/><br />
+        文件:<input type="file" name="photo"/><br />
+        <button type="submit">提交</button>
+    </form>
+
     <form action="upload.do" method="post" enctype="multipart/form-data">
         文件:<input type="file" name="photo"/><br />
         <button type="submit">提交</button>
