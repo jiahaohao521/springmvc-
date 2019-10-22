@@ -17,6 +17,14 @@
 
     <mvc:interceptors>
         <mvc:interceptor>
+            <mvc:mapping path="/login/**"/>
+            <bean class="com.jiahao.Interceptor.login.LoginInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/login/**"/>
+            <bean class="com.jiahao.Interceptor.login.LoginNameInterceptor"></bean>
+        </mvc:interceptor>
+        <mvc:interceptor>
             <mvc:mapping path="/Interceptor/**"/>
             <bean class="com.jiahao.Interceptor.start.A"/>
         </mvc:interceptor>
